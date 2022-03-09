@@ -6,12 +6,25 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct ForgotAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView (
+                    store: .init(
+                        initialState: .init(),
+                        reducer: appReducer.debugActions(),
+                        environment: .init(
+                            localSearch: .live,
+                            localSearchCompleter: .live,
+                            mainQueue: .main
+                        )
+                    )
+                )
+            }
         }
     }
 }

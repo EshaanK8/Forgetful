@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2800031327D2A5EE009C135B /* FlexibleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800031227D2A5EE009C135B /* FlexibleSheet.swift */; };
+		2800034D27D712EF009C135B /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800034C27D712EF009C135B /* ItemsView.swift */; };
 		28E5E4A427C70DA3006BF6A1 /* ForgotAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E5E4A327C70DA3006BF6A1 /* ForgotAppApp.swift */; };
 		28E5E4A627C70DA3006BF6A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E5E4A527C70DA3006BF6A1 /* ContentView.swift */; };
 		28E5E4A827C70DA4006BF6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E5E4A727C70DA4006BF6A1 /* Assets.xcassets */; };
@@ -14,6 +16,9 @@
 		28E5E4B527C70DA4006BF6A1 /* ForgotAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E5E4B427C70DA4006BF6A1 /* ForgotAppTests.swift */; };
 		28E5E4BF27C70DA4006BF6A1 /* ForgotAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E5E4BE27C70DA4006BF6A1 /* ForgotAppUITests.swift */; };
 		28E5E4C127C70DA4006BF6A1 /* ForgotAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E5E4C027C70DA4006BF6A1 /* ForgotAppUITestsLaunchTests.swift */; };
+		28E5E4CF27C714D3006BF6A1 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 28E5E4CE27C714D3006BF6A1 /* ComposableArchitecture */; };
+		28E5E4D227CAECDB006BF6A1 /* LocalSearchCompleter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E5E4D127CAECDB006BF6A1 /* LocalSearchCompleter.swift */; };
+		28E5E4D427CBE74C006BF6A1 /* LocalSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E5E4D327CBE74C006BF6A1 /* LocalSearchClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2800031227D2A5EE009C135B /* FlexibleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleSheet.swift; sourceTree = "<group>"; };
+		2800034C27D712EF009C135B /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
 		28E5E4A027C70DA3006BF6A1 /* ForgotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForgotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E5E4A327C70DA3006BF6A1 /* ForgotAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotAppApp.swift; sourceTree = "<group>"; };
 		28E5E4A527C70DA3006BF6A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +51,8 @@
 		28E5E4BA27C70DA4006BF6A1 /* ForgotAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForgotAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E5E4BE27C70DA4006BF6A1 /* ForgotAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotAppUITests.swift; sourceTree = "<group>"; };
 		28E5E4C027C70DA4006BF6A1 /* ForgotAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28E5E4D127CAECDB006BF6A1 /* LocalSearchCompleter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchCompleter.swift; sourceTree = "<group>"; };
+		28E5E4D327CBE74C006BF6A1 /* LocalSearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E5E4CF27C714D3006BF6A1 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +104,12 @@
 		28E5E4A227C70DA3006BF6A1 /* ForgotApp */ = {
 			isa = PBXGroup;
 			children = (
+				2800031227D2A5EE009C135B /* FlexibleSheet.swift */,
 				28E5E4A327C70DA3006BF6A1 /* ForgotAppApp.swift */,
 				28E5E4A527C70DA3006BF6A1 /* ContentView.swift */,
+				28E5E4D127CAECDB006BF6A1 /* LocalSearchCompleter.swift */,
+				28E5E4D327CBE74C006BF6A1 /* LocalSearchClient.swift */,
+				2800034C27D712EF009C135B /* ItemsView.swift */,
 				28E5E4A727C70DA4006BF6A1 /* Assets.xcassets */,
 				28E5E4A927C70DA4006BF6A1 /* Preview Content */,
 			);
@@ -143,6 +157,9 @@
 			dependencies = (
 			);
 			name = ForgotApp;
+			packageProductDependencies = (
+				28E5E4CE27C714D3006BF6A1 /* ComposableArchitecture */,
+			);
 			productName = ForgotApp;
 			productReference = 28E5E4A027C70DA3006BF6A1 /* ForgotApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = 28E5E49727C70DA3006BF6A1;
+			packageReferences = (
+				28E5E4CD27C714D3006BF6A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 28E5E4A127C70DA3006BF6A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				28E5E4A627C70DA3006BF6A1 /* ContentView.swift in Sources */,
+				2800034D27D712EF009C135B /* ItemsView.swift in Sources */,
+				28E5E4D227CAECDB006BF6A1 /* LocalSearchCompleter.swift in Sources */,
+				2800031327D2A5EE009C135B /* FlexibleSheet.swift in Sources */,
+				28E5E4D427CBE74C006BF6A1 /* LocalSearchClient.swift in Sources */,
 				28E5E4A427C70DA3006BF6A1 /* ForgotAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -416,9 +440,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ForgotApp/Preview Content\"";
+				DEVELOPMENT_TEAM = F24GRW8F7U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -433,6 +459,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eshaankunchur.ForgotApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,9 +471,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ForgotApp/Preview Content\"";
+				DEVELOPMENT_TEAM = F24GRW8F7U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -461,6 +490,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eshaankunchur.ForgotApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -579,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28E5E4CD27C714D3006BF6A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.33.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28E5E4CE27C714D3006BF6A1 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28E5E4CD27C714D3006BF6A1 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28E5E49827C70DA3006BF6A1 /* Project object */;
 }
