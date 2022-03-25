@@ -1,0 +1,6 @@
+framework module Pods_ForgotApp {
+  umbrella header "Pods-ForgotApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

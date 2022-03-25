@@ -1,0 +1,8 @@
+Target dependency graph (4 targets)
+SQLite.swift in Pods, no dependencies
+Pods-ForgotApp in Pods, depends on:
+SQLite.swift in Pods (explicit)
+Pods-ForgotApp-ForgotAppUITests in Pods, depends on:
+SQLite.swift in Pods (explicit)
+Pods-ForgotAppTests in Pods, depends on:
+Pods-ForgotApp in Pods (explicit)

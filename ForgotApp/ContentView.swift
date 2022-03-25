@@ -119,8 +119,6 @@ let appReducer = Reducer<AppState, AppAction, AppEnvironment> {
     case let .searchResponse(.success(response)):
         state.mapItems = response.mapItems
         state.region = .init(rawValue: response.boundingRegion)
-        print("first executed")
-        //print("Index is " + String(describing: state.mapItems[0].pointOfInterestCategory?.rawValue))
         return .none
         
     case let .searchResponse(.failure(error)):
@@ -133,7 +131,6 @@ let appReducer = Reducer<AppState, AppAction, AppEnvironment> {
             .map(AppAction.searchResponse)
         
     case let .tappedPlaceMark(mapItem):
-        print(mapItem.name ?? "")
         state.mapItems = [mapItem]
         return .none
     }
@@ -182,7 +179,6 @@ struct ContentView: View {
                         annotationItems: viewStore.mapItems,
                         annotationContent: { mapItem in
                             MapAnnotation(coordinate:  mapItem.placemark.coordinate) {
-                                let _ = print("Number of ", viewStore.mapItems[0].name)
                                 Button(action: {
                                     viewStore.send(.tappedPlaceMark(mapItem))
                                     currentMapItemFromPlaceMark = mapItem
@@ -195,7 +191,6 @@ struct ContentView: View {
                                         .background(.white)
                                         .clipShape(Circle())
                                 }.onAppear {
-                                    print("should have printed")
                                     currentMapItemFromPlaceMark = mapItem
                                 }
                             }
@@ -240,6 +235,7 @@ struct ContentView: View {
                 }
                 
             }
+            .preferredColorScheme(.dark)
             .navigationBarHidden(true)
             .navigationBarTitleDisplayMode(.inline)
             .searchable(text: viewStore.binding(get: \.query, send: AppAction.queryChanged)) {
