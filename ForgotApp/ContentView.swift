@@ -214,7 +214,7 @@ struct ContentView: View {
                             
                             if ((currentMapItemFromPlaceMark) != nil) {
                                 NavigationLink(destination: ItemsView(currentMapItem: currentMapItemFromPlaceMark!)) {
-                                    Text("Press Me")
+                                    Text("Go")
                                 }
                                 .padding()
                                 .background(Color(red: 0, green: 0, blue: 0.5))
@@ -223,7 +223,7 @@ struct ContentView: View {
                         
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                        .background(Color.green)
+                        .background(Color(red: 0.4, green: 0.7, blue: 0.8))
                         .clipShape(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
                     }
                 }
@@ -288,5 +288,24 @@ struct ContentView_Previews: PreviewProvider {
                 )
             )
         }
+    }
+}
+
+
+//Rounded corner extension
+extension View {
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape( RoundedCorner(radius: radius, corners: corners) )
+    }
+}
+
+struct RoundedCorner: Shape {
+
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
     }
 }

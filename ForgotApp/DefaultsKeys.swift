@@ -9,9 +9,9 @@ import Foundation
 
 struct DefaultsKeys {
     static let items = [
-        "MKPOICategoryRestaurant": [Item(name: "Mask"), Item(name: "Wallet")],
-        "MKPOICategoryBank": [Item(name: "Mask")],
-        "none": [Item(name: "none")]
+        "MKPOICategoryRestaurant": [Item(name: "Mask", isDeleting: false), Item(name: "Wallet", isDeleting: false)],
+        "MKPOICategoryBank": [Item(name: "Mask", isDeleting: false)],
+        "none": [Item(name: "none", isDeleting: false)]
     ]
 }
 

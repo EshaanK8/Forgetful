@@ -19,7 +19,6 @@
 		288D115C27DE8A82007E382C /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 288D115B27DE8A82007E382C /* FirebaseFirestoreSwift-Beta */; };
 		288D115E27DE8A82007E382C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 288D115D27DE8A82007E382C /* FirebaseStorage */; };
 		288D116027DE8A82007E382C /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 288D115F27DE8A82007E382C /* FirebaseStorageSwift-Beta */; };
-		288D116527DEC24E007E382C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288D116427DEC24E007E382C /* CardView.swift */; };
 		288D116727E13C82007E382C /* DefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288D116627E13C82007E382C /* DefaultsKeys.swift */; };
 		288D116927E13D42007E382C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288D116827E13D42007E382C /* Item.swift */; };
 		28D2F25827E7AE28008637B1 /* items.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 28D2F25727E7AE28008637B1 /* items.sqlite3 */; };
@@ -77,7 +76,6 @@
 		2800031227D2A5EE009C135B /* FlexibleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleSheet.swift; sourceTree = "<group>"; };
 		2800034C27D712EF009C135B /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
 		283422AC27DE8775008B17A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		288D116427DEC24E007E382C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		288D116627E13C82007E382C /* DefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKeys.swift; sourceTree = "<group>"; };
 		288D116827E13D42007E382C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		28AD05CA27E78A0700880F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 				283422AC27DE8775008B17A6 /* GoogleService-Info.plist */,
 				28E5E4A727C70DA4006BF6A1 /* Assets.xcassets */,
 				28E5E4A927C70DA4006BF6A1 /* Preview Content */,
-				288D116427DEC24E007E382C /* CardView.swift */,
 				288D116627E13C82007E382C /* DefaultsKeys.swift */,
 				288D116827E13D42007E382C /* Item.swift */,
 				28D2F25927E7B17F008637B1 /* AppDelegate.swift */,
@@ -513,7 +510,6 @@
 				28E5E4D227CAECDB006BF6A1 /* LocalSearchCompleter.swift in Sources */,
 				2800031327D2A5EE009C135B /* FlexibleSheet.swift in Sources */,
 				28E5E4D427CBE74C006BF6A1 /* LocalSearchClient.swift in Sources */,
-				288D116527DEC24E007E382C /* CardView.swift in Sources */,
 				28D2F25D27EA584E008637B1 /* SQLiteDatabase.swift in Sources */,
 				28D2F25A27E7B17F008637B1 /* AppDelegate.swift in Sources */,
 				28E5E4A427C70DA3006BF6A1 /* ForgotAppApp.swift in Sources */,
